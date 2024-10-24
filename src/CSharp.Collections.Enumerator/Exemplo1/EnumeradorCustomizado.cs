@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace CSharp.Collections.IEnumerator.Exemplo1
 {
-    // Classe customizada de coleção
-    internal class ColecaoCustomizada<T>
+    // Classe enumeradora customizada 
+    internal class EnumeradorCustomizado<T>
     {
         private List<T> items = new List<T>();
 
-        public ColecaoCustomizada()
+        public EnumeradorCustomizado()
         {
             
         }
 
-        public ColecaoCustomizada(params T[] numeros)
+        public EnumeradorCustomizado(params T[] numeros)
         {
             items = new List<T>(numeros);
         }
@@ -39,31 +39,31 @@ namespace CSharp.Collections.IEnumerator.Exemplo1
 
         // Para o funcionamento no foreach, é necessário possui um método publico com nome GetEnumerator() e que retorne um
         // objeto que contenha a implementação dos métodos MoveNext(), Reset() e declaração da propriedade Current
-        public EnumeradorCustomizado GetEnumerator()
+        public Enumerador GetEnumerator()
         {
 
-            return new EnumeradorCustomizado(this);
+            return new Enumerador(this);
         }
 
-        // Classe que é retornada pelo método GetEnumerator na coleção customizada
-        public class EnumeradorCustomizado
+        // Classe que é retornada pelo método GetEnumerator do enumerador customizado
+        public class Enumerador
         {
-            private readonly ColecaoCustomizada<T> _colecao;
+            private readonly EnumeradorCustomizado<T> _enumeradorCustomizado;
             private int _indice = -1;
 
-            public EnumeradorCustomizado(ColecaoCustomizada<T> colecao)
+            public Enumerador(EnumeradorCustomizado<T> colecao)
             {
-                _colecao = colecao;
+                _enumeradorCustomizado = colecao;
             }
 
             // Obrigatório ter a propriedade declarada para funcionar corretamente no foreach
-            public T Current => _colecao.items[_indice];
+            public T Current => _enumeradorCustomizado.items[_indice];
 
             // Obrigatório ter a implementação do método para funcionar corretamente no foreach
             public bool MoveNext()
             {
                 _indice++;
-                return _indice < _colecao.items.Count;
+                return _indice < _enumeradorCustomizado.items.Count;
             }
 
             // Obrigatório ter a implementação do método para funcionar corretamente no foreach

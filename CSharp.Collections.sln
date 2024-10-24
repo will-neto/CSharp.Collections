@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Collections.IEnumera
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Enumerator", "1 - Enumerator", "{1306A721-1A0E-428C-BC78-E49709A5DE97}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Indexador", "2 - Indexador", "{394A879C-C1F7-442D-A0B3-F84115ACA024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Collections.Indexador", "src\CSharp.Collections.Indexador\CSharp.Collections.Indexador.csproj", "{26A3DA9B-1D24-482D-9CC4-290C8833B299}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F} = {1306A721-1A0E-428C-BC78-E49709A5DE97}
+		{26A3DA9B-1D24-482D-9CC4-290C8833B299} = {394A879C-C1F7-442D-A0B3-F84115ACA024}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0120EA65-559C-4939-A32F-110DA76484EF}

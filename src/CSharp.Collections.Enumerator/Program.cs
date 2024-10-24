@@ -16,12 +16,15 @@ namespace CSharp.Collections.I0Enumerator
         private static void Enumerator()
         {
             /*
-               - Interface é usada para permitir o looping via foreach em classes que utilizam a mesma. 
+               - Interface IEnumerator é usada para permitir o looping via foreach em classes que utilizam a mesma. 
                Internamente, o "foreach" utiliza o GetEnumerator() para seu funcionamento
 
                - Um exemplo são as interfaces IEnumerable e IEnumerable<T>, ambas possuem a declaração do método GetEnumerator,
                que retorna um IEnumerator
-            */
+            
+                - Reforçando apenas o conceito de que implementar o GetEnumerator() para habilitar o uso no foreach não a transforma
+                em uma classe de coleção. Para a classe ser considerada uma coleção deve herdar o IEnumerable/IEnumerable<T>
+             */
 
             IEnumerable<int> numeros = new List<int>() { 10, 2, 3, 5 };
             IEnumerable caracteres = new ArrayList { 11, "teste", 2L, 3F, 1D };
@@ -46,16 +49,17 @@ namespace CSharp.Collections.I0Enumerator
             numerosEnumerador.MoveNext();
             Console.WriteLine("numeros (List<int>) = " + numerosEnumerador.Current); // Não dispara erro se nao chamado MoveNext() antes de usar Current
 
+
         }
 
 
         private static void ColecaoCustomizadaExemplo()
         {
-            ColecaoCustomizada<int> colecaoCustomizada = new ColecaoCustomizada<int>(1,2,3,4,5,6);
+            EnumeradorCustomizado<int> colecaoCustomizada = new EnumeradorCustomizado<int>(1,2,3,4,5,6);
 
-            // Percorre a instância da classe de coleção customizada devido a implementação dos métodos necessários que permitem
+            // Percorre a instância da classe de enumerador customizada devido a implementação dos métodos necessários que permitem
             // tal abordagem
-            Console.WriteLine("\n\nColeção Customizada com implementação de GetEnumerator()");
+            Console.WriteLine("\n\nEnumerador Customizado com implementação de GetEnumerator()");
             foreach(var item in colecaoCustomizada)
             {
                 Console.Write(item + " | ");
