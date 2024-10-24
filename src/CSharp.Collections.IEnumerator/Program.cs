@@ -16,14 +16,15 @@ namespace CSharp.Collections.I0Enumerator
         private static void Enumerator()
         {
             /*
-               - Interface IEnumerator é usada para permitir o looping via foreach em classes que utilizam a mesma. 
+               - Interface IEnumerator é usada para definir a forma de iteração de uma classe através do foreach
                Internamente, o "foreach" utiliza o GetEnumerator() para seu funcionamento
 
                - Um exemplo são as interfaces IEnumerable e IEnumerable<T>, ambas possuem a declaração do método GetEnumerator,
                que retorna um IEnumerator
             
                 - Reforçando apenas o conceito de que implementar o GetEnumerator() para habilitar o uso no foreach não a transforma
-                em uma classe de coleção. Para a classe ser considerada uma coleção deve herdar o IEnumerable/IEnumerable<T>
+                conceitualmente em uma classe de coleção. Para a classe ser considerada uma coleção deve herdar o IEnumerable/IEnumerable<T>
+                já que dessa forma seguimos as convenções de boas práticas
              */
 
             IEnumerable<int> numeros = new List<int>() { 10, 2, 3, 5 };

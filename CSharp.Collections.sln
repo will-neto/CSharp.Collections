@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Collections.IEnumerator", "src\CSharp.Collections.IEnumerator\CSharp.Collections.IEnumerator.csproj", "{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Collections.IEnumerator", "src\CSharp.Collections.IEnumerator\CSharp.Collections.IEnumerator.csproj", "{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Enumerator", "1 - Enumerator", "{1306A721-1A0E-428C-BC78-E49709A5DE97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Indexador", "2 - Indexador", "{394A879C-C1F7-442D-A0B3-F84115ACA024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Collections.Indexador", "src\CSharp.Collections.Indexador\CSharp.Collections.Indexador.csproj", "{26A3DA9B-1D24-482D-9CC4-290C8833B299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Collections.Indexador", "src\CSharp.Collections.Indexador\CSharp.Collections.Indexador.csproj", "{26A3DA9B-1D24-482D-9CC4-290C8833B299}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - IEnumerable", "3 - IEnumerable", "{95A8B57F-0EB2-4666-B1FC-11B08A1A205F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Collections.IEnumerable", "src\CSharp.Collections.IEnumerable\CSharp.Collections.IEnumerable.csproj", "{EEE851D8-BF4E-4005-9CFC-28EA8F416A62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A3DA9B-1D24-482D-9CC4-290C8833B299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE851D8-BF4E-4005-9CFC-28EA8F416A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE851D8-BF4E-4005-9CFC-28EA8F416A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE851D8-BF4E-4005-9CFC-28EA8F416A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE851D8-BF4E-4005-9CFC-28EA8F416A62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F} = {1306A721-1A0E-428C-BC78-E49709A5DE97}
 		{26A3DA9B-1D24-482D-9CC4-290C8833B299} = {394A879C-C1F7-442D-A0B3-F84115ACA024}
+		{EEE851D8-BF4E-4005-9CFC-28EA8F416A62} = {95A8B57F-0EB2-4666-B1FC-11B08A1A205F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0120EA65-559C-4939-A32F-110DA76484EF}
