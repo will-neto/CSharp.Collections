@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Collections.IEnumerator", "src\CSharp.Collections.Enumerator\CSharp.Collections.IEnumerator.csproj", "{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Enumerator", "1 - Enumerator", "{1306A721-1A0E-428C-BC78-E49709A5DE97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39F75175-C227-4BAE-B9C5-FF4B796F7A9F} = {1306A721-1A0E-428C-BC78-E49709A5DE97}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0120EA65-559C-4939-A32F-110DA76484EF}
+	EndGlobalSection
+EndGlobal
