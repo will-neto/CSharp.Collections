@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.ObjectModel;
 
 
 namespace CSharp.Collections.IEnumerable.Exemplo1
@@ -12,7 +13,7 @@ namespace CSharp.Collections.IEnumerable.Exemplo1
 
         public MinhaColecaoApenasPares()
         {
-            
+
         }
 
         public void Adicionar(params int[] numeros)

@@ -1,4 +1,5 @@
 ﻿using CSharp.Collections.IEnumerable.Exemplo1;
+using System.Collections;
 
 namespace CSharp.Collections.IEnumerable
 {
@@ -17,6 +18,9 @@ namespace CSharp.Collections.IEnumerable
                     por convenção o ideal é separar a utilidade das duas classes. Por um lado, a IEnumerable nos indica que uma classe
                     é parte de uma coleção e pode ser iterada, já a IEnumerator define o comportamento da iteração
 
+
+                - A IEnumerable permite trabalhar com mais de um tipo na mesma coleção
+
              */
 
 
@@ -33,6 +37,16 @@ namespace CSharp.Collections.IEnumerable
 
             Console.WriteLine("\n\n\n\n");
 
+            Console.WriteLine("== Múltiplos Tipos  (IEnumerable) ==");
+
+            System.Collections.IEnumerable colecaoDeMultiplosTipos = new ArrayList() { "Valor String", 10, 5f, true };
+
+            foreach (var item in colecaoDeMultiplosTipos)
+            {
+                Console.WriteLine($"{item} = {item.GetType()}");
+            }
+
+            Console.WriteLine("\n\n\n\n");
 
             System.Collections.IEnumerable colecaoCustomizada2 = new MinhaColecaoApenasIndexPares<string>(
                 "PAR 1", "IMPAR 1", "PAR 2", "IMPAR 2", "PAR 3", "IMPAR 3");
@@ -43,6 +57,11 @@ namespace CSharp.Collections.IEnumerable
             {
                 Console.WriteLine("• " + item);
             }
+
+
+            
+
+
 
         }
     }

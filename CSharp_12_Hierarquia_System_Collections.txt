@@ -1,0 +1,17 @@
+﻿System.Collections
+|
+└──── IEnumerable / IEnumerable <T>
+    └── ICollection
+        ├── BitArray<T>
+        ├── Stack<T>
+        ├── Queue<T>
+        ├── IList
+        │    ├── List<T>
+        │    └── ArrayList
+        └── IDictionary
+             ├── Dictionary<TKey, TValue>
+             ├── SortedDictionary<TKey, TValue>
+             └── HashTable
+  
+IEnumerator<T>
+    
