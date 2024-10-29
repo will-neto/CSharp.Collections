@@ -1,0 +1,7 @@
+IEnumerable vs ICollection: qual usar?
+
+- Quando necessário apenas iterar um coleção sem expor ou adicionar itens: IEnumerable
+- Coleção deve ser imutável após criação / apenas leitura: IEnumerable
+
+- Permitir persistência dos dados - adicionar, editar, deletar: ICollection
+- Redimensionamento de itens (devido inclusão/deleção): ICollection

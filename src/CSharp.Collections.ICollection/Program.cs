@@ -32,5 +32,10 @@ namespace CSharp.Collections.Collection
                 Console.WriteLine(item);
             }
         }
+
+        private static void ICollectionGenerica()
+        {
+
+        }
     }
 }
