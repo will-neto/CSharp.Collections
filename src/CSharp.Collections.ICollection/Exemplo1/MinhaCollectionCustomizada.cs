@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace CSharp.Collections.Collection.Exemplo1
 {
-    internal class MinhaCollectionCustomizada : ICollection
+    internal class MinhaCollectionCustomizada : System.Collections.ICollection
     {
         private int[] _items;
 

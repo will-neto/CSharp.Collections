@@ -1,5 +1,5 @@
 ﻿using CSharp.Collections.Collection.Exemplo1;
-using System.Collections;
+using CSharp.Collections.Collection.Exemplo2;
 
 namespace CSharp.Collections.Collection
 {
@@ -7,11 +7,11 @@ namespace CSharp.Collections.Collection
     {
         static void Main(string[] args)
         {
-            ICollection();
-            ICollectionGenerica();
+            // Collection();
+            CollectionGenerica();
         }
 
-        private static void ICollection()
+        private static void Collection()
         {
             /*
                 - A "ICollection" é uma interface não-genérica que implementa a interface "IEnumerable";
@@ -25,16 +25,47 @@ namespace CSharp.Collections.Collection
             // Exemplo de classe concreta customizada herdando IList
             MinhaCollectionCustomizada lista = new MinhaCollectionCustomizada(10);
             lista.Adicionar(10, 20, 65, 98, 7, 977, 546);
-            ICollection colecao = lista;
+            System.Collections.ICollection colecao = lista;
 
             foreach(var item in colecao)
             {
                 Console.WriteLine(item);
             }
+
         }
 
-        private static void ICollectionGenerica()
+        //TODO: criação de classe customizada de collection generica 
+        private static void CollectionGenerica()
         {
+            /* 
+                Devido a introdução de genéricos, a ICollection<T> (genérica) possui métodos adicionais para persistência
+                de dados. Isso se dá devido a segurança de tipo, onde o tipo informado é único para a ICollection<T>, já para a 
+                ICollection não-genérica, seria necessário utilizar "objects", o que possui mais complexidade devido a necessidade de
+                casting e também amplia a margem de possíveis erros.
+            */
+
+            MinhaCollectionGenericaCustomizada<int> minhaListaNumeros = new MinhaCollectionGenericaCustomizada<int>();
+            minhaListaNumeros.Add(10);
+            minhaListaNumeros.Add(20);
+            minhaListaNumeros.Add(30);
+            minhaListaNumeros.Add(40);
+
+            foreach (var item in minhaListaNumeros)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("Lógica de redimensionamento em caso de inclusão acima do tamanho");
+
+            minhaListaNumeros.Add(50);
+
+            foreach (var item in minhaListaNumeros)
+            {
+                Console.WriteLine(item);
+            }
+
+            minhaListaNumeros.Remove(50);
+
 
         }
     }
